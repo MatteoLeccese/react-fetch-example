@@ -9,7 +9,7 @@ const initialState: ICommentsState = {
 
 export const fetchComments = createAsyncThunk(
   "posts/fetchComments", async (id: number) => {
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/comments?postId=${id}${id}`).then(data => data.json());
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/comments?postId=${id}`).then(data => data.json());
     return res;
   }
 );

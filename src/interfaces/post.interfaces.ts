@@ -10,3 +10,9 @@ export interface IPostState {
   loading: boolean,
   error: undefined | string,
 }
+
+export interface IPostState {
+  posts: IPost[],
+  loading: boolean,
+  error: undefined | string,
+}
