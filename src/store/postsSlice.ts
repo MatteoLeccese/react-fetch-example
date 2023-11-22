@@ -9,7 +9,7 @@ const initialState: IPostState = {
 
 export const fetchPosts = createAsyncThunk(
   "posts/fetchPosts", async () => {
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/photos`).then(data => data.json());
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/posts`).then(data => data.json());
     return res;
   }
 );
