@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Index from "./pages/Index";
-import DetailedNews from "./pages/NewsDetailed";
+import DetailedPost from "./pages/DetailedPost";
 
 const router = createBrowserRouter([
   {
@@ -8,9 +8,9 @@ const router = createBrowserRouter([
     element: <Index />,
   },
   {
-    path: "/details:id",
-    element: <DetailedNews />,
-  }
+    path: "/details/:id",
+    element: <DetailedPost />,
+  },
 ]);
 
 const App = () => {
