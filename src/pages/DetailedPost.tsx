@@ -46,7 +46,7 @@ const DetailedPost = () => {
         />
         {app.user && (
           <div className="mt-4">
-            <p className="font-bold text-lg">Autor: {app.user.name}</p>
+            <p className="font-bold text-lg">Author: {app.user.name}</p>
             <p className="text-gray-600">Email: {app.user.email}</p>
           </div>
         )}
@@ -59,7 +59,7 @@ const DetailedPost = () => {
           </div>
         )}
         <div className="mb-4">
-          <h2 className="font-bold text-xl">Comentarios</h2>
+          <h2 className="font-bold text-xl">Comments</h2>
           {comments.map((comment) => (
             <div key={comment.id} className="border-b border-gray-300 p-2">
               <p className="font-bold text-lg">{comment.name}</p>
